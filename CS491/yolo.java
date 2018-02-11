@@ -248,7 +248,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 int random = rand.nextInt(finalArray.length);
                 //yolo.setText(String.valueOf(finalArray[random]));
-                yolo.setText(String.valueOf(finalArray.length));
+                yolo.setText(String.valueOf(finalArray[random]));
                 output.clear();
 
             }
