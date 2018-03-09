@@ -14,21 +14,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
@@ -65,10 +54,8 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         TextPass = (EditText) findViewById(R.id.TextPass);
         TextVerify = (EditText) findViewById(R.id.TextVerify);
 
-
         //adding click listener to button
         buttonSave.setOnClickListener(this);
-
 
     }
 
@@ -81,8 +68,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             super.onPreExecute();
 
         }
-
-
         @Override
 
         protected JSONObject doInBackground(String... args) {
